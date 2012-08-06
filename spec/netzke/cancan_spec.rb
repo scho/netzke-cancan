@@ -1,5 +1,4 @@
 require 'spec_helper'
-require 'netzke/core'
 
 describe Netzke::CanCan do
   before(:each) do
