@@ -1,4 +1,4 @@
-= netzke-cancan
+= netzke-cancan {<img src="https://secure.travis-ci.org/scho/netzke-cancan.png" />}[http://travis-ci.org/scho/netzke-cancan]
 
 netzke-cancan simply adds all {cancan}[https://github.com/ryanb/cancan] controller helper methods to all {Netzke}[https://github.com/nomadcoder/netzke-basepack/] components.
 
