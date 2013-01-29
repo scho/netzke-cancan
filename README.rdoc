@@ -4,16 +4,20 @@ netzke-cancan simply adds all {cancan}[https://github.com/ryanb/cancan] controll
 
 == Installation
 
-In Rails 3, add this to your gem file and run the +bundle+ command.
+In Rails 3 and with the latest netzke version, add this to your gem file and run the +bundle+ command.
 
   gem 'netzke-cancan'
+
+If you are on Netzke 0.7.x, add this to your gemfile:
+
+  gem 'netzke-cancan', '~> 0.7.0'
 
 == Usage
 
 Simply use all cancan helper methods like can?, cannot? or authorize! in your Netzke components the same way you would do that inside of your controller.
 
 == Contributing to netzke-cancan
- 
+
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
 * Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it.
 * Fork the project.
