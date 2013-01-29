@@ -20,7 +20,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rake', '~> 0.9'
 
   s.add_runtime_dependency 'cancan'
-  s.add_runtime_dependency 'netzke-core', '~> 0.8.0'
+  s.add_runtime_dependency 'netzke-core'
 
   s.required_rubygems_version = ">= 1.3.4"
 end
