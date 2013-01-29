@@ -1,14 +1,16 @@
 module Netzke
   class Base
 
-    # This method is returns the current ability with the current user from netzke
+    # This method returns the current ability with the current user from
+    # the controller.
     #
     # @return [Ability]
     def current_ability
-      @current_ability ||= Ability.new(Netzke::Core.current_user)
+      @current_ability ||= Ability.new(Netzke::Base.controller.current_user)
     end
 
-    # cancan calls helper_method, which is present in any controller, but not in a netzke components
+    # cancan calls helper_method, which is present in any controller, but not
+    # in a netzke component
     #
     # @params *args
     def self.helper_method(*args)

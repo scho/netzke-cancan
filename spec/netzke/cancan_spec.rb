@@ -3,7 +3,7 @@ require 'spec_helper'
 describe Netzke::CanCan do
   before(:each) do
     user = Object.new
-    stub(Netzke::Core).current_user{user}
+    stub(Netzke::Base).controller.stub!.current_user{user}
     @component = TestComponent.new
   end
 
@@ -14,7 +14,7 @@ describe Netzke::CanCan do
   it "should respond to cannot?" do
     @component.should respond_to(:cannot?)
   end
-  
+
   describe "#current_ability" do
     it "should respond_to current_ability" do
       @component.should respond_to(:current_ability)
